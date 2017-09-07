@@ -31,11 +31,18 @@
                                      height: 500px;
                    }
                   </style>
+                  <script src="jquery.min.js"></script>
 </head>
 <body>
-    <h1>Hello everyone!</h1> 
+    <h1 style="display:none;">Hello everyone!</h1> 
     <img class="fl" src="2.jpg" alt="1.jpg"> 
-    <p>大家都是好样的</br>,月薪18</br>K</p>            
+    <p style="display:none;">大家都是好样的</br>,月薪18</br>K</p>            
     <img class="fr" src="1.jpg" alt="2.jpg">             
 </body>
+<script>
+$(function(){
+    $("h1").show("slow").animate({fontSize:"36px",opacity:"0.6"});
+    $("p").show(2500);
+})
+</script>
 </html>
